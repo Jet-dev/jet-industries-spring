@@ -28,7 +28,7 @@ public class CrewMember {
     private Job job;
 
     @ManyToOne
-    @JoinColumn(name = "spaceShidId")
+    @JoinColumn(name = "spaceShipId")
     private SpaceShip spaceShip;
 
 }
