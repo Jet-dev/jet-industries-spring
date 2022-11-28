@@ -2,7 +2,7 @@ docker:
   - any: ['Dockerfile', 'docker-compose.yml']
 
 documentation:
-  - any: '.*\\.md+$'
+  - any: ['**/*.md']
 
 ci:
-  - any: '^.github\\/.**'
+  - any: ['.github/**/*']
