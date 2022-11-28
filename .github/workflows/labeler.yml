@@ -5,6 +5,7 @@ on:
 
 jobs:
   triage:
+    continue-on-error: true
     permissions:
       contents: read
       pull-requests: write
