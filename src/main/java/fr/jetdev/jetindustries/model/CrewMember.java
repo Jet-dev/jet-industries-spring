@@ -20,7 +20,7 @@ public class CrewMember {
     @Column(nullable = false)
     private String lastName;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String picture;
 
     @ManyToOne
