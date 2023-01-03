@@ -20,7 +20,7 @@ public class CrewMember {
     @Column(nullable = false)
     private String lastName;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String picture;
 
     @ManyToOne
@@ -28,7 +28,7 @@ public class CrewMember {
     private Job job;
 
     @ManyToOne
-    @JoinColumn(name = "spaceShidId")
+    @JoinColumn(name = "spaceShipId")
     private SpaceShip spaceShip;
 
 }

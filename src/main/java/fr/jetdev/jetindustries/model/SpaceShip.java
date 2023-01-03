@@ -38,7 +38,6 @@ public class SpaceShip {
     @Column
     private Double percentage;
 
-    @OneToMany
-    @JoinColumn(name = "crewMemberId")
+    @OneToMany(mappedBy = "spaceShip")
     private List<CrewMember> crewMembers;
 }
