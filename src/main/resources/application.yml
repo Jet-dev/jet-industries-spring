@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT}
   servlet:
     context-path: /jet-industries
   http2:
@@ -10,9 +10,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/jetindustries
-    username: user
-    password: password
+    url: ${DATABASE_URL}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     database: POSTGRESQL
